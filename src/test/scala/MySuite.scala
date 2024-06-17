@@ -6,4 +6,9 @@ class MySuite extends munit.FunSuite {
     val expected = 42
     assertEquals(obtained, expected)
   }
+
+  test("PurityApplication") {
+    val App: PurityApplication = PurityApplication("App")
+    assertEquals(App.getName, "App")
+  }
 }
